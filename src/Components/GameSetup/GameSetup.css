@@ -1,0 +1,94 @@
+/* Note: root font-size is set to 16px */
+.App {
+  border: solid 1px yellow;
+  width: 100vw;
+  height: 100vh;
+}
+
+.setup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a2a33;
+  min-width: 50%;
+  min-height: 50%;
+}
+
+.top-icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pick-mark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  background-color: #1f3641;
+  margin: 2.5rem 0;
+  border-radius: 15px;
+  width: 100%;
+  box-shadow: inset 0 -0.5rem #10212a;
+}
+
+.pick-mark h6 {
+  color: #a8bfc9;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin: 1.5rem 0;
+}
+
+.pick-mark p {
+  color: #a8bfc9;
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0.8px;
+  margin: 1.625rem 0;
+}
+
+.x-o-selection {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1a2a33;
+  width: 90%;
+  height: 4.5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+#o-mark {
+  width: 48%;
+  border-radius: 10px;
+  color: #1a2a33;
+  background-color: #979797;
+  border: none;
+}
+
+#x-mark {
+  width: 48%;
+  border-radius: 10px;
+  color: #979797;
+  background-color: transparent;
+  border: none;
+}
+
+#vs-cpu-button, #vs-human-button {
+  border-radius: 15px;
+  color: #1a2a33;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 1.25px;
+  height: 4.1875rem;
+  width: 100%;
+}
+
+#vs-human-button {
+  background-color: #31c3bd;
+  box-shadow: inset 0 -8px 0 #118c87;
+}
+
+#vs-cpu-button {
+  background-color: #f2b137;
+  margin-bottom: 1.25rem;
+  box-shadow: inset 0 -8px 0 #cc8b13;
+}

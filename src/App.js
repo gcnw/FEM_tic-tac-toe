@@ -1,13 +1,10 @@
 import "./App.css";
-import MarkSelector from './Components/MarkSelector/MarkSelector';
-import GameType from './Components/GameType/GameType';
-
+import GameSetup from './Components/GameSetup/GameSetup';
 
 function App() {
   return (
     <div className="App">
-      <MarkSelector />
-      <GameType />
+      <GameSetup />
     </div>
   );
 }
