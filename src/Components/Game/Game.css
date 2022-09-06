@@ -1,0 +1,15 @@
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+}
+
+.game-tiles {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 1.25rem;
+  width: auto;
+  height: auto;
+}

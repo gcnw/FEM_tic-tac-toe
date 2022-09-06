@@ -1,5 +1,6 @@
 import React from 'react';
 import './Game.css';
+import GameTile from '../GameTile/GameTile'
 import xoIcon from '../../res/logo.svg'
 
 function Game() {
@@ -9,7 +10,15 @@ function Game() {
         <img src={ xoIcon } alt='tic-tac-toe logo'></img>
       </div>
       <div className='game-tiles'>
-        {/* Game Tiles */}
+        <GameTile />
+        <GameTile />
+        <GameTile />
+        <GameTile />
+        <GameTile />
+        <GameTile />
+        <GameTile />
+        <GameTile />
+        <GameTile />
       </div>
       <div className='point-distribution'>
         <div id='x-points'></div>
