@@ -4,6 +4,17 @@
   align-items: center;
   width: 50%;
   height: 50%;
+  /* margin: 1.25rem ; */
+}
+
+.info-header {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+}
+
+#turn-indicator {
+  display: flex;
 }
 
 .game-tiles {
@@ -12,4 +23,28 @@
   gap: 1.25rem;
   width: auto;
   height: auto;
+  margin: 1.25rem 0;
+}
+
+.point-distribution {
+  display: flex;
+  width: auto;
+}
+
+#x-points {
+  width: 8.75rem;
+  height: 2.5rem;
+  background-color: #31c3bd;
+}
+
+#number-of-ties {
+  width: 8.75rem;
+  height: 2.5rem;
+  background-color: #a8bfc9;
+}
+
+#o-points {
+  width: 8.75rem;
+  height: 2.5rem;
+  background-color: #f2b137;
 }

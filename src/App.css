@@ -3,10 +3,14 @@
 }
 
 .App {
-  display: grid;
-  place-items: center;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   background-color: #1a2a33;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 html {
