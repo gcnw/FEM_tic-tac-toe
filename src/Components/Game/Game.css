@@ -1,50 +1,87 @@
 .game-board {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 50%;
-  height: 50%;
-  /* margin: 1.25rem ; */
+  min-width: fit-content;
+  max-width: 50vh;
+  max-height: 50vh;
 }
 
 .info-header {
   display: flex;
-  width: auto;
+  width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 
 #turn-indicator {
   display: flex;
+  align-items: center;
+  width: 8.75rem;
+  height: 3.25rem;
+  background-color: #1f3641;
+  border-radius: 10px;
+  color:#a8bfc9
+}
+
+#restart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 10px;
+  background-color: #a8bfc9;
+  box-shadow: inset 0px -4px 0px 0px #6B8997 ;
+
 }
 
 .game-tiles {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
   gap: 1.25rem;
-  width: auto;
-  height: auto;
   margin: 1.25rem 0;
 }
 
 .point-distribution {
   display: flex;
-  width: auto;
+  justify-content: space-between;
+  height: auto;
+}
+
+#x-points, #number-of-ties, #o-points {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 8.75rem;
+  height: 4.5rem;
+  align-items: center;
+  border-radius: 15px;
 }
 
 #x-points {
-  width: 8.75rem;
-  height: 2.5rem;
   background-color: #31c3bd;
 }
 
 #number-of-ties {
-  width: 8.75rem;
-  height: 2.5rem;
   background-color: #a8bfc9;
+  margin: 0 1.25rem;
+
 }
 
 #o-points {
-  width: 8.75rem;
-  height: 2.5rem;
   background-color: #f2b137;
+  
+}
+
+#game-logo path {
+}
+
+#game-icon-x path {
+  fill: #a8bfc9;
+}
+
+#game-icon-x {
+  transform: scale(0.5);
 }

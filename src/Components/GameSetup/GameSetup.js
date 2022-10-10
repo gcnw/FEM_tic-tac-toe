@@ -1,13 +1,13 @@
 import React from 'react';
 import './GameSetup.css';
-import xoIcon from '../../res/logo.svg'
+import LogoSVG from '../../res/LogoSVG'
 
 
 function GameSetup() {
   return (
     <div className="setup-container">
       <div className="top-icon-container">
-        <img src={ xoIcon } alt="tic-tac-toe logo"></img>
+        <LogoSVG />
       </div>
       <div className="pick-mark">
         <h6>PICK PLAYER 1'S MARK</h6>
