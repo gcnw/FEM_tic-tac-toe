@@ -51,23 +51,63 @@
   border-radius: 10px;
 }
 
-#o-mark {
-  width: 48%;
+#x-mark, #o-mark {
+  width: 49.5%;
   border-radius: 10px;
   color: #1a2a33;
-  background-color: #979797;
-  border: none;
-}
-
-#x-mark {
-  width: 48%;
-  border-radius: 10px;
-  color: #979797;
   background-color: transparent;
   border: none;
 }
 
+#x-mark {
+  width: 49.5%;
+  border-radius: 10px;
+  /* background-color: transparent; */
+  border: none;
+}
+
+#game-setup-x path {
+  stroke: #a8bfc9;
+  stroke-width: 5px;
+  fill: none;
+}
+
+
+#game-setup-o path {
+  stroke: #a8bfc9;
+  stroke-width: 5px;
+  fill: none;  
+}
+
+#x-mark:hover #game-setup-x path{
+  fill: #31c3bd;
+}
+
+#o-mark:hover #game-setup-o path{
+  fill: #f2b137;
+}
+
+#x-mark:hover {
+  background-color: rgba(255,255,255,0.05);
+}
+
+#o-mark:hover {
+  background-color: rgba(255,255,255,0.05);
+}
+
+#vs-human-button:hover {
+  background-color: #65e9e4;
+}
+
+#vs-cpu-button:hover {
+  background-color: #ffc860;
+}
+
 #vs-cpu-button, #vs-human-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   border-radius: 15px;
   color: #1a2a33;
   font-size: 1.25rem;

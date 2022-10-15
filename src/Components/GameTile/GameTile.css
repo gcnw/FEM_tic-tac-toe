@@ -1,7 +1,12 @@
 .game-tile {
   width: 8.75rem;
   height: 8.75rem;
+  color: red;
   background-color: #1f3641;
   box-shadow: inset 0 -8px 0 #10212a;
   border-radius: 15px;
+}
+
+.game-tile div {
+  color: red;
 }

@@ -67,15 +67,10 @@
 #number-of-ties {
   background-color: #a8bfc9;
   margin: 0 1.25rem;
-
 }
 
 #o-points {
   background-color: #f2b137;
-  
-}
-
-#game-logo path {
 }
 
 #game-icon-x path {
@@ -84,4 +79,9 @@
 
 #game-icon-x {
   transform: scale(0.5);
+}
+
+#restart-container:hover {
+  background-color: #dbe8ed;
+  cursor: pointer;
 }
