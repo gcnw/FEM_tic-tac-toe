@@ -81,6 +81,14 @@
   transform: scale(0.5);
 }
 
+#game-icon-o path {
+  fill: #a8bfc9;
+}
+
+#game-icon-o {
+  transform: scale(0.5);
+}
+
 #restart-container:hover {
   background-color: #dbe8ed;
   cursor: pointer;

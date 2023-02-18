@@ -21,24 +21,20 @@ function GameSetup(props) {
   }, []);
 
   function chooseX() {
+    props.selectMark(true);   
     xDiv.current.style.boxShadow = "0 0 5px 5px #31c3bd";
     xMark.current.getElementsByTagName("path")[0].style.fill = "#31c3bd";
     oDiv.current.style.boxShadow = "";
     oMark.current.getElementsByTagName("path")[0].style.fill = "";
-    props.isXSelected(true);   
   }
 
   function chooseO() {
+    props.selectMark(false);
     oDiv.current.style.boxShadow = "0 0 5px 5px #f2b137";
     oMark.current.getElementsByTagName("path")[0].style.fill = "#f2b137";
     xDiv.current.style.boxShadow = "";
     xMark.current.getElementsByTagName("path")[0].style.fill = "";
-    props.isXSelected(false);
   }
-
-  function cpuGame() {}
-
-  function playerGame() {}
 
   return (
     <div className="setup-container">
@@ -49,18 +45,17 @@ function GameSetup(props) {
         <h6>PICK PLAYER 1'S MARK</h6>
         <div className='x-o-selection'>
           <button id="x-mark" onClick={ chooseX }>
-            <IconXSVG
-              id="game-setup-x" 
+            <IconXSVG svgIndex="game-setup" 
               />
           </button>
           <button id="o-mark" onClick={ chooseO }>
-            <IconOSVG id="game-setup-o" />       
+            <IconOSVG svgIndex="game-setup" />       
           </button>
         </div>
         <p>REMEMBER: X GOES FIRST</p>
       </div>
-      <Link id="vs-cpu-button" to="/game">NEW GAME (VS CPU)</Link>
-      <Link id="vs-human-button" to="/game">NEW GAME (VS PLAYER)</Link>
+      <Link id="vs-cpu-button" to={{pathname:"/game"}} state={{opponent: 'CPU'}}>NEW GAME (VS CPU)</Link>
+      <Link id="vs-human-button" to={{pathname:"/game"}} state={{opponent: 'PLAYER 2'}}>NEW GAME (VS PLAYER)</Link>
     </div>
   )
 }

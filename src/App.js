@@ -1,14 +1,21 @@
-import { useState } from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import "./App.css";
 import GameSetup from './Components/GameSetup/GameSetup';
 import Game from './Components/Game/Game'
 
 function App() {
-  const [xSelected, setXSelected] = useState(true);
+  const [chosenMark, setChosenMark] = useState('X');
+  const [cpuOpp, setCpuOpp] = useState(null)
 
-  function isXSelected(mark) {
-    setXSelected(mark);
+  
+
+  function pickMark(mark) {
+    setChosenMark(mark);
+  }
+
+  function pickOpp(opp) {
+    setCpuOpp(opp)
   }
 
   return (
@@ -17,12 +24,14 @@ function App() {
         <Routes>
           <Route path="/" element={ 
             <GameSetup 
-              isXSelected={ isXSelected }
-              xSelect={ xSelected }
+              opponent={ cpuOpp }
+              chooseOpponent={ pickOpp }
+              xChoice={ chosenMark }
+              selectMark={ pickMark }
               /> } />
-          <Route path="game" element={ 
+          <Route path="/game" element={ 
             <Game 
-              xFirst={ xSelected }
+              xChoice={ chosenMark }
             /> } />
         </Routes>
       </BrowserRouter>
